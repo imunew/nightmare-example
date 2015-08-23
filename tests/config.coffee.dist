@@ -1,0 +1,18 @@
+config = {}
+
+config.mocha = {
+  "timeout": 100000 # デフォルトが2000ミリ秒なので、必要に応じて長めに設定する
+}
+
+config.app = {
+  "login": {
+    "url": "https://www.rakuten.co.jp/myrakuten/login.html"
+    "username" : "{username}",
+    "password" : "{password}"
+  },
+  "logout": {
+    "url": "https://member.id.rakuten.co.jp/rms/nid/logout"
+  }
+}
+
+module.exports = config

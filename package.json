@@ -1,0 +1,17 @@
+{
+  "name": "nightmare-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "coffee-script": "^1.9.3",
+    "mocha": "^2.2.5",
+    "nightmare": "^1.8.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "e2e-test:example": "mocha --compilers coffee:coffee-script/register tests/example.coffee"
+  },
+  "author": "",
+  "license": "ISC"
+}

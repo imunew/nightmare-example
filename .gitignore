@@ -1,0 +1,14 @@
+*~
+GTAGS
+GRTAGS
+GPATH
+TAGS
+
+logs/*
+node_modules
+tests/config.coffee
+
+.idea/
+npm-debug.log
+
+!.gitkeep
