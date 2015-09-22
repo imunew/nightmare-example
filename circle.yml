@@ -8,7 +8,7 @@ dependencies:
   pre:
     # application
     - npm install
-    - cp tests/config.coffee.circle.dist tests/config.coffee
+    - cp tests/config.coffee.circleci.dist tests/config.coffee
   post:
 
 test:
