@@ -6,11 +6,11 @@ machine:
 
 dependencies:
   pre:
-    # application
-    - npm install
     - cp tests/config.coffee.circleci.dist tests/config.coffee
   post:
 
 test:
   override:
     - npm run e2e-test:example
+  post:
+    - cp -r logs/screenshots $CIRCLE_ARTIFACTS
