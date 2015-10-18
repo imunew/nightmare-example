@@ -1,16 +1,20 @@
 machine:
   node:
-    version: 0.10.33
+    version: 4.0.0
   timezone:
     Asia/Tokyo
 
 dependencies:
   pre:
-    - cp tests/config.coffee.circleci.dist tests/config.coffee
+    - chmod a+x bin/update_config_vars.sh
+    - bin/update_config_vars.sh
+    - cp test/config.js.circleci.dist test/config.js
   post:
 
 test:
+  pre:
+    - mkdir logs/screenshots
   override:
     - npm run e2e-test:example
   post:
-    - cp -r logs/screenshots $CIRCLE_ARTIFACTS
+    - cp -rf logs/screenshots $CIRCLE_ARTIFACTS

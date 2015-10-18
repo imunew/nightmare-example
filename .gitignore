@@ -6,7 +6,7 @@ TAGS
 
 logs/*
 node_modules
-tests/config.coffee
+test/config.js
 
 .idea/
 npm-debug.log
