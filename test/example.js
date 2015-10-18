@@ -2,8 +2,6 @@ var Nightmare = require('nightmare');
 var config = require('./config');
 var should = require('chai').should();
 
-require("babel/register");
-
 describe ('login and logout at rakuten.co.jp', function() {
 
     /** 楽天にログイン、ログアウト */
