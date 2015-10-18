@@ -1,0 +1,14 @@
+var config = {};
+
+config.app = {
+    "login": {
+        "url": "https://www.rakuten.co.jp/myrakuten/login.html",
+        "username" : "{username}",
+        "password" : "{password}"
+    },
+    "logout": {
+        "url": "https://member.id.rakuten.co.jp/rms/nid/logout"
+    }
+};
+
+module.exports = config;
