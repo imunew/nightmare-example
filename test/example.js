@@ -1,3 +1,5 @@
+require('mocha-generators').install();
+
 var Nightmare = require('nightmare');
 var config = require('./config');
 var should = require('chai').should();
@@ -26,9 +28,9 @@ describe ('login and logout at rakuten.co.jp', function() {
                 .type('input#userid', config.app.login.username)
                 .type('input#passwd', config.app.login.password)
                 .click('input.loginButton')
-                .wait()
-                //.screenshot('./logs/screenshots/login.png')
-                //.wait()
+                .wait(100)
+                .screenshot('./logs/screenshots/login.png')
+                .wait(100)
                 .evaluate(function () {
                     return location.origin + location.pathname;
                 })
@@ -43,9 +45,9 @@ describe ('login and logout at rakuten.co.jp', function() {
                 .goto('http://www.rakuten.co.jp/')
                 .wait()
                 .click('a.mr-logout-btn')
-                .wait()
-                //.screenshot('./logs/screenshots/logout.png')
-                //.wait()
+                .wait(100)
+                .screenshot('./logs/screenshots/logout.png')
+                .wait(100)
                 .evaluate(function() {
                     return location.origin + location.pathname;
                 })
