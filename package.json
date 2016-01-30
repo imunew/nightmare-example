@@ -4,13 +4,13 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "nightmare": "^2.0.7"
+    "nightmare": "^2.1.4"
   },
   "devDependencies": {
     "chai": "^3.3.0",
     "co-mocha": "^1.1.2",
     "mocha": "^2.3.3",
-    "mocha-generators": "^1.1.1"
+    "mocha-generators": "^1.2.0"
   },
   "scripts": {
     "e2e-test:example": "mocha --harmony test/example.js"
