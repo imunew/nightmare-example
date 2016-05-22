@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "nightmare": "^2.1.4"
+    "nightmare": "^2.4.1"
   },
   "devDependencies": {
     "chai": "^3.3.0",
